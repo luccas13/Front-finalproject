@@ -1,5 +1,3 @@
-import { version } from "react";
-
 const base = process.env.REACT_APP_API_BASE_URL
 
 const routes = {
