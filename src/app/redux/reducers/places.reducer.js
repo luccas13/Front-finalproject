@@ -14,7 +14,7 @@ export const placesReducer = (state = initialState, action) => {
         case GET_PLACES_SUCCESS:
             return { ...state, loading: false, places: payload };
         case GET_PLACES_ERROR:
-            return { ...state, loading: false, places: payload };
+            return { ...state, loading: false, error: payload };
         default:
             return state;
     }
