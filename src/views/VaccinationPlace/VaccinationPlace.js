@@ -21,10 +21,10 @@ const VaccinationPlaces = (props) => {
     return (
         <Row>
             <Col span={4} className='col' >
-                <Card title={place?.name} >
-                    <p>Address: {place?.address}</p>
-                    <p>latitude: {place?.lat}</p>
-                    <p>longitude: {place?.lon}</p>
+                <Card title={place?.name} headStyle={{textAlign: 'center'}} >
+                    <p><b>Address:</b> {place?.address}</p>
+                    <p><b>latitude:</b> {place?.lat}</p>
+                    <p><b>longitude:</b> {place?.lon}</p>
                     <Image src={place?.img} />
                 </Card>
             </Col>
