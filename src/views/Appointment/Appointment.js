@@ -1,6 +1,8 @@
+import AppointmentForm from "../../components/AppointmentForm/AppointmentForm";
+
 const Appointment = () => {
     return (
-        <p>Appointment</p>
+        <AppointmentForm/>
     );
 }
  

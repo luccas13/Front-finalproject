@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './app/redux/store';
+import './assets/css/styles.css';
 import 'leaflet/dist/leaflet.css';
 
 ReactDOM.render(

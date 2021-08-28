@@ -7,6 +7,7 @@ import Home from './views/Home';
 import VaccinationPlaces from './views/VaccinationPlaces/VaccinationPlaces';
 import VaccinationPlace from './views/VaccinationPlace/VaccinationPlace';
 import Appointment from './views/Appointment/Appointment';
+import CreateView from './views/CreateView/CreateView';
 
 const { Header, Content } = Layout;
 
@@ -16,12 +17,14 @@ function App() {
       <Header>
         <NavBar/>
       </Header>
-      <Content>
+      <Content className='content' >
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/vaccination-places" component={VaccinationPlaces} />
           <Route exact path="/vaccination-places/:id" component={VaccinationPlace} />
           <Route exact path="/appointments" component={Appointment} />
+          <Route exact path="/appointments/create" component={CreateView} />
+          {/* <Route exact path="/appointments/:id" component={AppointmentForm} /> */}
         </Switch>
       </Content>
     </Layout>
