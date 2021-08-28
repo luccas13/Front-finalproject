@@ -1,9 +1,9 @@
 import { getPoints } from "../../services/vaccinationPlaces.services";
 
 //Action Types
-export const GET_PLACES = "GET_USERS_LOADING";
-export const GET_PLACES_SUCCESS = "GET_USERS_OK";
-export const GET_PLACES_ERROR = "GET_USERS_ERROR";
+export const GET_PLACES = "GET_PLACES";
+export const GET_PLACES_SUCCESS = "GET_PLACES_SUCCESS";
+export const GET_PLACES_ERROR = "GET_PLACES_ERROR";
 
 //Actions Creators
 export const getPlaces = () => ({ type: GET_PLACES });
